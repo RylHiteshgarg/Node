@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <% include partials/nav.ejs %>
+        <h1>Welcome to <%= personid %></h1>
+        <p>Hey ninjas<strong>Age : </strong> <%= data.age %></p>
+        <p><strong>job : </strong> <%= data.job %></p>
+
+        <h2>Hobbies</h2>
+        <ul>
+            <% data.hobbies.forEach(function(item){ %>
+            <li><%= item %></li>
+            <% }); %>
+        </ul>
+
+    </body>
+</html>
